@@ -1,0 +1,24 @@
+<html>
+
+<script type="text/JavaScript">
+    function timedRefresh(timeoutPeriod) {
+        setTimeout("location.reload(true);",timeoutPeriod);
+    }
+</script>
+
+
+<head>TITLE</head>
+
+<body onload="JavaScript:timedRefresh(1000);">
+
+<table>
+
+  <% @posts.each do |p| %>
+      <tr><%= p %></tr>
+  <% end %>
+
+</table>
+
+</body>
+
+</html>
